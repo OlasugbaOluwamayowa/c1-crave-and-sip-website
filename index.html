@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF0F4">
+  <meta name="description" content="Crave & Sip makes fruity drinks for the moment a craving hits. Explore our provisional menu and send your order to WhatsApp.">
+  <meta property="og:title" content="Crave & Sip — Cold, fruity, sorted.">
+  <meta property="og:description" content="Craving something fruity? We've got you. Browse the menu and order on WhatsApp.">
+  <meta property="og:type" content="website">
+  <title>Crave & Sip — Craving something fruity?</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="products.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">
+    <span class="announcement-dot" aria-hidden="true"></span>
+    A little fruity joy is just a message away.
+    <a href="#menu">Find your flavour <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Crave and Sip home">
+        <span class="brand-type">crave<span>&</span>sip<small>FRUITY DRINKS, GOOD MOODS</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <a href="#menu">The menu</a>
+        <a href="#story">Our vibe</a>
+        <a href="#group-orders">Group orders</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-trigger" id="cartTrigger" aria-label="Open shopping cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 8H6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.5" fill="currentColor"/><circle cx="18" cy="20" r="1.5" fill="currentColor"/></svg>
+          <span class="cart-label">Your bag</span><span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a class="button button-pink nav-order" href="https://wa.me/2348024850065" target="_blank" rel="noopener">Order on WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-pad" id="home">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> YOUR CRAVING CALLED</p>
+          <h1>Craving something <em>fruity?</em><br><span>We've got you.</span></h1>
+          <p class="hero-description">Big flavour, generous cups, and refreshing drinks for whatever you're craving. Just you, your favourite people, or a whole crowd — let's make it a good sip.</p>
+          <div class="hero-actions">
+            <a class="button button-pink button-large" href="#menu">Explore the menu <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#group-orders">Ordering for a crowd? <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-footnote"><span class="sparkle" aria-hidden="true">✳</span> Cold, fruity, sorted. <span class="footnote-divider"></span> Made for your moment.</div>
+        </div>
+        <div class="hero-visual" aria-label="Colourful fruity drink photography">
+          <div class="hero-photo hero-photo-main">
+            <img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=1100&q=85" alt="Bright fruit smoothie in a glass" fetchpriority="high">
+          </div>
+          <div class="hero-photo hero-photo-small">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdac6e126e49?auto=format&fit=crop&w=600&q=85" alt="Fresh citrus drink with fruit" loading="lazy">
+          </div>
+          <div class="hero-sticker sticker-pink"><span>GOOD<br>MOOD</span><b>↗</b></div>
+          <div class="hero-sticker sticker-mint"><span>100%<br>CRAVING<br>ENERGY</span><b>✳</b></div>
+          <div class="hero-caption"><span class="caption-dot"></span> A little joy in every order</div>
+        </div>
+      </div>
+      <div class="hero-bottom-bar" aria-hidden="true"><span>FRUITY</span><span>FRESH-LOOKING</span><span>FULL OF FEELING</span><span>MADE FOR THE MOMENT</span></div>
+    </section>
+
+    <section class="menu-section section-pad" id="menu">
+      <div class="container">
+        <div class="section-heading menu-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE GOOD STUFF</p>
+            <h2>Pick your <em>happy.</em></h2>
+            <p class="section-intro">Something familiar, something fruity, something calling your name.</p>
+          </div>
+          <div class="menu-heading-note"><span class="note-star">✳</span><span>Menu draft<br><strong>Prices are provisional</strong></span></div>
+        </div>
+        <div class="provisional-notice" role="note"><span aria-hidden="true">ⓘ</span> <span>This is a sample menu with provisional prices. Photos are free-to-use Unsplash stock images for layout testing only, not actual Crave & Sip products. Confirm products, sizes and prices before launch.</span></div>
+        <div class="menu-toolbar">
+          <div class="filter-list" role="group" aria-label="Filter drinks">
+            <button class="filter-button is-active" data-filter="all">All the sips</button>
+            <button class="filter-button" data-filter="zobo">Zobo</button>
+            <button class="filter-button" data-filter="classic">Classics</button>
+            <button class="filter-button" data-filter="juice">Juices</button>
+            <button class="filter-button" data-filter="blend">Blends</button>
+          </div>
+          <div class="menu-count"><span id="menuCount">8</span> sample sips</div>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="menu-bottom">
+          <p>Found your flavour? Add a few, then send your order in one neat WhatsApp message.</p>
+          <button class="button button-dark" id="viewBagButton">Review your bag <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise-section section-pad" id="story">
+      <div class="container promise-grid">
+        <div class="promise-visual">
+          <img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&w=1100&q=85" alt="Colourful fruit juice poured into a glass" loading="lazy">
+          <div class="promise-stamp"><span>THE</span><strong>CRAVE<br>FACTOR</strong><span>✳ GOOD SIPS ONLY ✳</span></div>
+        </div>
+        <div class="promise-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A LITTLE ABOUT OUR VIBE</p>
+          <h2>Not just a drink.<br>A <em>craving moment.</em></h2>
+          <p>We believe a fruity drink should feel like a small win in the middle of your day. A cold cup between lectures. A treat after a long shift. Something colourful to pass around with your people.</p>
+          <p>That's the Crave & Sip spirit: warm, generous, reliable, and never too serious about a good craving.</p>
+          <a class="text-link text-link-purple" href="#group-orders">Got a moment in mind? Let's plan it <span aria-hidden="true">↗</span></a>
+          <div class="promise-values">
+            <div><span class="value-icon value-pink">✳</span><strong>Big flavour</strong><small>Made for the craving</small></div>
+            <div><span class="value-icon value-purple">↗</span><strong>Easy ordering</strong><small>One message gets it moving</small></div>
+            <div><span class="value-icon value-mint">♡</span><strong>Good energy</strong><small>For you and your people</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="moments-section section-pad">
+      <div class="container">
+        <div class="section-heading moments-heading">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> WHAT'S THE OCCASION?</p><h2>There's a sip for <em>that.</em></h2></div>
+          <p class="section-intro">Little break or big celebration, fruity drinks fit right in.</p>
+        </div>
+        <div class="moments-grid">
+          <a class="moment-card moment-student" href="#menu"><span class="moment-number">01 / BETWEEN THINGS</span><div><h3>Lecture break?</h3><p>Give your day a fruity plot twist.</p><span class="moment-arrow">↗</span></div></a>
+          <a class="moment-card moment-work" href="#group-orders"><span class="moment-number">02 / TEAM REFRESH</span><div><h3>Office round?</h3><p>One good idea. Drinks for the whole crew.</p><span class="moment-arrow">↗</span></div></a>
+          <a class="moment-card moment-party" href="#group-orders"><span class="moment-number">03 / YOUR PEOPLE</span><div><h3>Big day coming?</h3><p>Let's get the group order sorted.</p><span class="moment-arrow">↗</span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="group-section section-pad" id="group-orders">
+      <div class="container group-panel">
+        <div class="group-copy">
+          <p class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> FOR THE WHOLE CREW</p>
+          <h2>Big plans.<br><em>Bigger pours.</em></h2>
+          <p>Parties, office meetings, church programmes, family get-togethers — tell us what you're planning and roughly how many cups you need. We'll help you figure out the next step.</p>
+          <ul class="group-list">
+            <li><span>✓</span> Parties & celebrations</li><li><span>✓</span> Offices & meetings</li><li><span>✓</span> Churches & community events</li><li><span>✓</span> Family days & special treats</li>
+          </ul>
+          <button class="button button-mint button-large" id="groupOrderButton">Plan a group order <span aria-hidden="true">↗</span></button>
+          <small class="group-small">Availability, pricing and delivery timing are confirmed with the team.</small>
+        </div>
+        <div class="group-visual">
+          <img src="https://images.unsplash.com/photo-1532634896-26909d0d4b4c?auto=format&fit=crop&w=1000&q=85" alt="Colourful refreshments arranged for sharing" loading="lazy">
+          <div class="group-badge"><span>MORE PEOPLE</span><strong>MORE<br>CHEERS!</strong><span>✳ GROUP ORDERS ✳</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section section-pad" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro">
+          <p class="eyebrow"><span class="eyebrow-line"></span> QUICK ANSWERS</p>
+          <h2>Good question.<br><em>Here's the sip.</em></h2>
+          <p>Need something else? Send us a message and we'll take it from there.</p>
+          <a class="text-link" href="https://wa.me/2348024850065" target="_blank" rel="noopener">Ask us on WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="faq-list">
+          <details><summary>How do I place an order?<span>+</span></summary><p>Add your drinks to the bag, complete the checkout details and choose “Send Order to WhatsApp”. Your message will be prepared for you. Check it and press Send in WhatsApp.</p></details>
+          <details><summary>Are these menu prices final?<span>+</span></summary><p>Not yet. The products and prices on this development version are examples only. The Crave & Sip team must confirm the final menu before the website goes live.</p></details>
+          <details><summary>How much is delivery?<span>+</span></summary><p>Delivery charges depend on the business's confirmed delivery arrangements. The team will confirm the fee and final amount before accepting your order.</p></details>
+          <details><summary>Can I order for an event or office?<span>+</span></summary><p>Absolutely. Use the group-order button and share your event type, date and estimated quantity. The team can then confirm options, pricing and delivery arrangements.</p></details>
+          <details><summary>When will my drinks arrive?<span>+</span></summary><p>Your delivery time will be confirmed during the ordering conversation. Sending a WhatsApp request does not automatically confirm availability or delivery.</p></details>
+          <details><summary>Which payment methods do you accept?<span>+</span></summary><p>Payment methods still need to be confirmed by Crave & Sip. Please ask the team during your order conversation.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <div class="container closing-inner">
+        <div class="closing-spark" aria-hidden="true">✳</div>
+        <p class="eyebrow eyebrow-light">YOU KNOW WHAT YOU WANT</p>
+        <h2>Let's make that<br><em>craving happen.</em></h2>
+        <p>Pick your sips. Add them to your bag. We'll help you take it from there.</p>
+        <a class="button button-mint button-large" href="#menu">Find your fruity <span aria-hidden="true">↓</span></a>
+        <div class="closing-fruit fruit-one" aria-hidden="true">✳</div><div class="closing-fruit fruit-two" aria-hidden="true">●</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand-block">
+        <a class="brand brand-footer" href="#home">
+          <span class="brand-type">crave<span>&</span>sip<small>FRUITY DRINKS, GOOD MOODS</small></span>
+        </a>
+        <p>Craving something fruity?<br>We've got you.</p>
+      </div>
+      <div class="footer-links"><strong>Have a look</strong><a href="#menu">The menu</a><a href="#story">Our vibe</a><a href="#group-orders">Group orders</a><a href="#faq">FAQs</a></div>
+      <div class="footer-links"><strong>Let's talk</strong><a href="https://wa.me/2348024850065" target="_blank" rel="noopener">WhatsApp the team</a><span>Delivery coverage: to be confirmed</span><span>Location: to be confirmed</span></div>
+      <div class="footer-cta"><span>THIRSTY FOR SOMETHING GOOD?</span><a href="https://wa.me/2348024850065" target="_blank" rel="noopener">Start a WhatsApp chat ↗</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Crave & Sip. Made for the craving.</span><a href="privacy.html">Privacy notice</a><span class="footer-note">Sample menu and stock photos — replace before launch.</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header"><div><p class="eyebrow">YOUR PICKS</p><h2 id="cartTitle">The good bag <span aria-hidden="true">♡</span></h2></div><button class="icon-button" id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="drawer-content" id="cartContents"></div>
+    <div class="drawer-footer" id="cartFooter">
+      <div class="subtotal-row"><span>Subtotal</span><strong id="cartSubtotal">₦0</strong></div>
+      <p class="delivery-note">Delivery fee and final total will be confirmed by the Crave & Sip team.</p>
+      <button class="button button-pink button-full" id="checkoutButton">Go to checkout <span aria-hidden="true">→</span></button>
+      <button class="continue-link" id="continueShopping">Keep browsing</button>
+    </div>
+  </aside>
+
+  <div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" aria-hidden="true">
+    <div class="checkout-card">
+      <div class="checkout-header"><div><p class="eyebrow">ALMOST THERE</p><h2 id="checkoutTitle">Where's the sip going?</h2><p>We'll put your order details together for WhatsApp.</p></div><button class="icon-button" id="closeCheckout" aria-label="Close checkout">×</button></div>
+      <form id="checkoutForm" novalidate>
+        <div class="form-grid">
+          <label class="field field-wide">Full name <span>*</span><input name="fullName" autocomplete="name" required placeholder="Your name"><small class="field-error"></small></label>
+          <label class="field">Phone number <span>*</span><input name="phone" type="tel" autocomplete="tel" required placeholder="e.g. 080..."><small class="field-error"></small></label>
+          <label class="field">State <span>*</span><input name="state" autocomplete="address-level1" required placeholder="e.g. Oyo"><small class="field-error"></small></label>
+          <label class="field">City <span>*</span><input name="city" autocomplete="address-level2" required placeholder="e.g. Ibadan"><small class="field-error"></small></label>
+          <label class="field">Area / neighbourhood <span>*</span><input name="area" required placeholder="Your area"><small class="field-error"></small></label>
+          <label class="field field-wide">Delivery address <span>*</span><input name="address" autocomplete="street-address" required placeholder="House number, street, estate..."><small class="field-error"></small></label>
+          <label class="field field-wide">Landmark / directions <small>(optional)</small><input name="landmark" placeholder="A nearby landmark"></label>
+          <label class="field field-wide">Delivery instructions <small>(optional)</small><textarea name="instructions" rows="2" placeholder="Anything the delivery team should know?"></textarea></label>
+          <label class="field">Preferred date <small>(optional)</small><input name="date" type="date"></label>
+          <label class="field">Preferred time <small>(optional)</small><input name="time" type="time"></label>
+        </div>
+        <div class="checkout-review" id="checkoutReview"></div>
+        <p class="form-note">Your order request opens in WhatsApp. Please review it and press Send. Availability, delivery fee, final total and timing are confirmed by the team.</p>
+        <div class="form-error-global" id="formError" role="alert"></div>
+        <button class="button button-pink button-full button-large" type="submit">Send order to WhatsApp <span aria-hidden="true">↗</span></button>
+        <button class="continue-link" type="button" id="backToBag">Back to bag</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="order-preview-modal" id="orderPreviewModal" role="dialog" aria-modal="true" aria-labelledby="reviewTitle" aria-hidden="true">
+    <div class="checkout-card preview-card">
+      <div class="checkout-header"><div><p class="eyebrow">ONE LAST LOOK</p><h2 id="reviewTitle">Your order, all together.</h2><p>Check the details before we open WhatsApp.</p></div><button class="icon-button" id="closePreview" aria-label="Close order review">×</button></div>
+      <div id="finalReview"></div>
+      <div class="preview-actions"><button class="button button-pink button-full" id="openWhatsApp">Continue to WhatsApp <span aria-hidden="true">↗</span></button><button class="continue-link" id="editOrder">Edit details</button></div>
+    </div>
+  </div>
+
+  <script>
+    // Privacy notice page is separate; no analytics or form data is sent to a server by this frontend-only starter.
+  </script>
+</body>
+</html>
